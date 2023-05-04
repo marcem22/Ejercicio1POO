@@ -37,5 +37,6 @@ if __name__=="__main__":
     for fila in reader:
         lineacompleta=fila
         print(lineacompleta)
+        print("tu mama ")
   
 
