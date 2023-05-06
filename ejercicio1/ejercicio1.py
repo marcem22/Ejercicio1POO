@@ -1,5 +1,5 @@
 import csv,re
-from email import email 
+from email import email
 
 def crearCuenta(correos="",contraseña=""):
 	    datos=correos.split("@")
@@ -10,7 +10,7 @@ def crearCuenta(correos="",contraseña=""):
 if __name__=="__main__":
     nombre=input("Ingrese su nombre:")
     mail=input("Ingrese su email:")
-    print(f"estimado{nombre} te enviaremos tus mensajes a la direccion de correo {mail}")
+    print(f"estimado {nombre} te enviaremos tus mensajes a la direccion de correo {mail}")
     email.__contraseña=input("ingrese su contraseña actual:")
     nueva=input("ingrese la nueva contraseña:")
     print(f"su nueva contraseña es:"+email.modificarContraseña(email,nueva))
