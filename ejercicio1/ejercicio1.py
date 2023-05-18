@@ -32,7 +32,7 @@ if __name__=="__main__":
         else:
             print(f"cuenta no valida: {fila[0]}")
 
-        
+    
 
     
   
