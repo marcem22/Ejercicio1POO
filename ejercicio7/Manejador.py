@@ -1,4 +1,4 @@
-from ViajeroFrecuente7 import ViajeroFrecuente
+from ViajeroFrecuente import ViajeroFrecuente
 import  csv
 
 class manejadorViajero:
@@ -7,8 +7,8 @@ class manejadorViajero:
     def agregarViajero(self,unViajero):
         self.__listaViajero.append(unViajero)
     def testViajero(self):
-        archivo = open('Ejercicio 7\Datos7.csv')
-        reader = csv.reader(archivo,delimiter=',')
+        archivo = open('viajerosFrecuentes.csv')
+        reader = csv.reader(archivo,delimiter=';')
         for fila in reader:
             num = fila[0]
             dni = fila[1]

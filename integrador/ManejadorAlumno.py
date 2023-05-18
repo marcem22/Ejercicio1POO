@@ -15,7 +15,7 @@ class ManejadorAlumno:
         if self.__cantidad==self.__dimension:
             self.__dimension+=self.__incremento
             self.__listaalum = np.resize(self.__listaalum,self.__dimension)
-        archivo=open("C:\\Users\\lisan\\OneDrive\\2° Año\\Programación Orientada a Objetos\\Unidad 2\\Ejercicio Integrador\\alumnos.csv")
+        archivo=open('alumnos.csv')
         reader=csv.reader(archivo,delimiter=';')
         i=0
         for fila in reader:

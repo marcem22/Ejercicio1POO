@@ -1,4 +1,4 @@
-from conjunto8 import conjunto
+from conjunto import conjunto
 
 if __name__ == '__main__':
     opc = None

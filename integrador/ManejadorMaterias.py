@@ -5,7 +5,7 @@ class ManejadorMateria:
         self.__listamat=[]
         
     def carga_materias(self):
-        archivo=open("C:\\Users\\lisan\\OneDrive\\2° Año\\Programación Orientada a Objetos\\Unidad 2\\Ejercicio Integrador\\materiasAprobadas.csv")
+        archivo=open('materiasAprobadas.csv')
         reader=csv.reader(archivo,delimiter=';')
         i=0
         for fila in reader:
