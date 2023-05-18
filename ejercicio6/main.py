@@ -1,4 +1,4 @@
-from Manejador6 import manejadorViajero
+from Manejador import manejadorViajero
 
 if __name__== '__main__':
     lista = manejadorViajero()
@@ -31,4 +31,4 @@ if __name__== '__main__':
             elif opc == '5':
                 cant = int(input("Ingrese la cantidad de millas a comparar: "))
                 lista.compararMillas(cant,n)
-        print("Hasta luego :D!!")    
+        print("Exit")    

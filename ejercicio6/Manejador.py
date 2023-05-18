@@ -1,4 +1,4 @@
-from ViajeroFrecuente6 import ViajeroFrecuente
+from ViajeroFrecuente import ViajeroFrecuente
 import csv
 class manejadorViajero:
     def __init__(self):
@@ -6,8 +6,8 @@ class manejadorViajero:
     def agregarViajero(self,unViajero):
         self.__listaViajero.append(unViajero)
     def testViajero(self):
-        archivo = open('Ejercicio 6\Datos6.csv')
-        reader = csv.reader(archivo,delimiter=',')
+        archivo = open('viajerosFrecuentes.csv')
+        reader = csv.reader(archivo,delimiter=';')
         for fila in reader:
             num = fila[0]
             dni = fila[1]
@@ -44,4 +44,4 @@ class manejadorViajero:
         maximo = max(self.__listaViajero)
         for i in range(len(self.__listaViajero)):
             if self.__listaViajero[i].getTotalMillas() == maximo.getTotalMillas():
-                print("El viajero",self.__listaViajero[i].getNumViajero(),"tiene el maximo de millas.")
+                print("El viajero",self.__listaViajero[i].getNumViajero(),"tiene el máximo de millas.")
